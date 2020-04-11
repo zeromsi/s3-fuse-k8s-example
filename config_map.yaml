@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: s3-config
+data:
+  S3_URL: https://object-storage.klovercloud.io/
+  S3_REGION: my-store
+  S3_BUCKET: 5e7b52d3ef01f779dc8448e3-us-west-1-reliance-bucket-hasan
+  AWS_KEY: L2KLYF18TANGFJ1YSA0Q
+  AWS_SECRET_KEY: fepQ4MiVP3BVxgW5BAgUzLSalPIB4PyJr79cpObT
