@@ -1,3 +1,8 @@
 https://linux.die.net/man/1/s3fs
 https://github.com/s3fs-fuse/s3fs-fuse/wiki/Fuse-Over-Amazon
 https://github.com/s3fs-fuse/s3fs-fuse/wiki/FAQ
+https://icicimov.github.io/blog/virtualization/Kubernetes-shared-storage-with-S3-backend/
+
+https://github.com/signaleleven/s3fs-sidecar
+
+

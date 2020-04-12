@@ -37,9 +37,9 @@ spec:
         imagePullPolicy: Always
         securityContext:
           privileged: true
-          capabilities:
-            add:
-              - SYS_ADMIN
+        #   capabilities:
+        #     add:
+        #       - SYS_ADMIN
 
         envFrom:
           - configMapRef:
@@ -50,17 +50,17 @@ spec:
           mountPath: /dev/fuse
         - name: mntdatas3fs
           mountPath: /var/s3
-          mountPropagation: Bidirectional
+          # mountPropagation: Bidirectional
 
-      - name: nginx
-        image: nginx
+      # - name: nginx
+      #   image: nginx
 
-        volumeMounts:
-        - name: devfuse
-          mountPath: /dev/fuse
-        - name: mntdatas3fs
-          mountPath: /var/s3
-          mountPropagation: HostToContainer
+      #   volumeMounts:
+      #   - name: devfuse
+      #     mountPath: /dev/fuse
+      #   - name: mntdatas3fs
+      #     mountPath: /var/s3
+      #     mountPropagation: HostToContainer
       # #   securityContext:
       # #     privileged: true
 
